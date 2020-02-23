@@ -25,4 +25,4 @@ Data Resources:
 
 
 Addition Resources:
-[Figma] (https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
+[Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
