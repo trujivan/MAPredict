@@ -12,3 +12,8 @@ Our *backend* is made of:
 Our data is sourced from:
 
 Pitch:
+
+
+## Documentation:
+![GitHub Logo](/images/MAPREDICT.png)
+Format: ![Alt Text](url)
