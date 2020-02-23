@@ -42,8 +42,6 @@
 </style>
 <div>
     <h1 style="align:center">Climate Data Bitches</h1>
-    <input type="checkbox" id="myCheckbox"> Health
-    <input type="checkbox" id="myCheckbox1"> Climate
  <div width = "300px"id="slider-time"></div>
 </div>
 <svg width="1100" height="800"></svg>
@@ -61,37 +59,8 @@
       height = +svg.attr("height");
   
   var dataTime = d3.range(0, 26).map(function(d) {
-    return new Date(2001 + d, 0, 0);
+    return new Date(2018 + d, 0, 0);
   });
-
-  d3.select("#myCheckbox").on("change",update);
-            update();
-            
-function update1(){
-    d3.selectAll("input").each(function(d){ 
-  if(d3.select(this).attr("type") == "checkbox") 
-    d3.select(this).node().checked = false;
-});
-}
-
-function update(){
-
-    if(d3.select("#myCheckbox").property("checked")){
-        color = d3.scaleThreshold()
-      .domain(d3.range(0, 20))
-      .range(d3.schemeReds[9]);
-    }
-    else
-    {
-        color = d3.scaleThreshold()
-      .domain(d3.range(0, 20))
-      .range(d3.schemeBlues[9]);
-    }
-    
-    console.log("Ciao")
-} 
-
-
     var sliderTime = d3
     .sliderBottom()
     .min(d3.min(dataTime))
@@ -126,10 +95,10 @@ function update(){
   let proj = d3.geoAlbersUsa()
   let year_tip = d3.map()
   var path = d3.geoPath().projection(proj);
-
   var color = d3.scaleThreshold()
-      .domain(d3.range(0, 20))
-      .range(d3.schemeBlues[9]);
+      .domain(d3.range(0, 16))
+      //d3.schemeReds[9]
+      .range(d3.schemeReds[9]);
   
 
       function strong(text) {
@@ -174,6 +143,16 @@ function handleMouseOut(d) {
   function parseData(year){
     year_tip.set(['Curr'], year)
     return d3.json("data_new.json"
+    // , {
+    //   method:"POST",
+    //   body: JSON.stringify({
+    //     end_year: '2021',
+    //   }),
+    //   headers: {
+    //     "Content-type": "application/json",
+    //     "Access-Control-Allow-Origin": "*"
+    //   }
+    // }
     ).then( function(d) { 
       d.forEach(element => {
         index = element.predictions.findIndex(x => x.year ==year);
@@ -191,7 +170,7 @@ function handleMouseOut(d) {
 
   var promises = [
     d3.json("states-10m.json"),
-    parseData('2000') ]
+    parseData('2017') ]
   Promise.all(promises).then(ready)
   
   function ready([us]) {
@@ -201,7 +180,7 @@ function handleMouseOut(d) {
       .selectAll("path")
       .data(topojson.feature(us, us.objects.states).features)
       .enter().append("path")
-      .attr("fill", function(d) { return color(d["2000"] = unemployment.get(d.properties.name)); })
+      .attr("fill", function(d) { return color(d["2017"] = unemployment.get(d.properties.name)); })
         .attr("d", path)
         .on("mouseover", handleMouseOver)
         .on("mouseout", handleMouseOut);
