@@ -17,9 +17,7 @@ The objective for this project is to create visualizations showing the status of
 ## Documentation:
 ### Processes:
 ![](/img/Webp.net-gifmaker.gif)
-![](/img/1.png)
-![](/img/2.png)
-![](/img/3.png)
+
 
 
 #### Work-Flow & Goals
