@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+.counties {
+  /* fill: none; */
+  stroke: black;
+  fill: none;
+}
+
+.states {
+  fill: none;
+  stroke: red;
+  stroke-linejoin: round;
+}
+.tip {
+    position: absolute;
+    /*text-align: center;*/
+    /*width: 140px;*/
+    /*height: 50px;*/
+    padding: 5px;
+    font: 12px sans-serif;
+    background: lightsteelblue;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+.legend-text {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.legend-title {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+
+</style>
+<div >
+ <div width = "300px"id="slider-time"></div>
+</div>
+<svg width="1100" height="800"></svg>
+
+<script type="text/javascript" src="../lib/d3.v5.min.js"></script>
+<script src="../lib/d3-scale-chromatic.v1.min.js"></script>
+<script src="../lib/topojson.v2.min.js"></script>
+<script type="text/javascript" src="../lib/d3-simple-slider.min.js"></script>
+<script type="text/javascript" src="../lib/d3-tip.min.js"></script>
+
+<script>
+
+  var svg = d3.select("svg"),
+      width = +svg.attr("width"),
+      height = +svg.attr("height");
+  
+  var dataTime = d3.range(0, 26).map(function(d) {
+    return new Date(2001 + d, 0, 0);
+  });
+    var sliderTime = d3
+    .sliderBottom()
+    .min(d3.min(dataTime))
+    .max(d3.max(dataTime))
+    .step(25)
+    .width(800)
+    .tickFormat(d3.timeFormat('%Y'))
+    .tickValues(dataTime)
+    .ticks(5)
+    .default(new Date(1998, 0, 0))
+    .on('onchange', val => {
+      d3.select('p#value-time').text(d3.timeFormat('%Y')(val));
+      let alex = parseInt(d3.timeFormat('%Y')(val))
+      call_all_with_year(alex)
+    });
+
+  var gTime = d3
+    .select('div#slider-time')
+    .append('svg')
+    .attr('width', 2000)
+    .attr('height', 100)
+    .append('g')
+    .attr('transform', 'translate(30,30)');
+  gTime.call(sliderTime);
+
+  d3.select('p#value-time').text(d3.timeFormat('%Y')(sliderTime.value()));
+
+  
+  var unemployment = d3.map();
+  var unemployment_og = d3.map();
+  var regions_name = d3.map()
+  let proj = d3.geoAlbersUsa()
+  let year_tip = d3.map()
+  var path = d3.geoPath().projection(proj);
+  var color = d3.scaleThreshold()
+      .domain(d3.range(0, 20))
+      .range(d3.schemeReds[9]);
+  
+
+      function strong(text) {
+    return "<strong>" + text + "</strong>"
+}
+
+var tip = d3.tip()
+    .attr("class", "tip")
+    .offset([-10, 0])
+    .html(function(d) {
+        console.log(d)
+        console.log(unemployment_og)
+        var state = d.properties.name;
+        var earthquakes = unemployment_og.get(state);
+        var region_name = regions_name.get(state);
+
+        return "State: " + strong(state) +
+        // "<br>Region: " + strong(region_name) +
+        "<br>Year: " + strong(year_tip.values()[0]) +
+        "<br>Index: " + strong(earthquakes) + "</span>";
+    });
+svg.call(tip);
+function handleMouseOver(d) {
+    tip.show(d);
+    d3.select(this)
+        .attr("stroke", "white")
+        .attr("stroke-width", "3")
+}
+
+function handleMouseOut(d) {
+    tip.hide(d);
+    d3.select(this)
+        .attr("stroke", "none")
+        .attr("stroke", "none")
+}
+
+
+  var g = svg.append("g")
+      .attr("transform", "translate(0,40)");
+
+
+  function parseData(year){
+    year_tip.set(['Curr'], year)
+    return d3.json("data_new.json"
+    ).then( function(d) { 
+      d.forEach(element => {
+        index = element.predictions.findIndex(x => x.year ==year);
+        value_for_year = element.predictions[index].pollution
+        console.log(value_for_year)
+
+      unemployment.set(element['state'], +value_for_year);
+      unemployment_og.set(element['state'], +value_for_year);
+    //   regions_name.set(element['state'], "CIAO"); MORE DATA THAT CAN GET FROM THE BACKEND
+      });
+      
+  
+  })
+  }
+
+  var promises = [
+    d3.json("states-10m.json"),
+    parseData('2000') ]
+  Promise.all(promises).then(ready)
+  
+  function ready([us]) {
+    svg.append("g")
+        .attr("class", "counties")
+      .selectAll("path")
+      .data(topojson.feature(us, us.objects.states).features)
+      .enter().append("path")
+      .attr("fill", function(d) { return color(d["2000"] = unemployment.get(d.properties.name)); })
+        .attr("d", path)
+        .on("mouseover", handleMouseOver)
+        .on("mouseout", handleMouseOut);
+  }
+  function call_all_with_year(year ){
+    var promises = [
+    d3.json("states-10m.json"),
+    parseData(year)  ]
+  Promise.all(promises).then(ready)
+    
+  }
+  </script>
