@@ -1,0 +1,282 @@
+[
+    {
+    "start_year": 2000,
+    "end_year": 2032,
+    "state": "Alaska",
+    "factor": "O3 AQI",
+    "predictions": [
+        {
+            "year": 2000,
+            "pollution": "18.81"
+        },
+        {
+            "year": 2001,
+            "pollution": "18.81"
+        },
+        {
+            "year": 2002,
+            "pollution": "18.81"
+        },
+        {
+            "year": 2003,
+            "pollution": "18.82"
+        },
+        {
+            "year": 2004,
+            "pollution": "18.82"
+        },
+        {
+            "year": 2005,
+            "pollution": "18.82"
+        },
+        {
+            "year": 2006,
+            "pollution": "18.83"
+        },
+        {
+            "year": 2007,
+            "pollution": "18.83"
+        },
+        {
+            "year": 2008,
+            "pollution": "18.83"
+        },
+        {
+            "year": 2009,
+            "pollution": "18.84"
+        },
+        {
+            "year": 2010,
+            "pollution": "18.84"
+        },
+        {
+            "year": 2011,
+            "pollution": "18.84"
+        },
+        {
+            "year": 2012,
+            "pollution": "18.85"
+        },
+        {
+            "year": 2013,
+            "pollution": "18.85"
+        },
+        {
+            "year": 2014,
+            "pollution": "18.85"
+        },
+        {
+            "year": 2015,
+            "pollution": "18.86"
+        },
+        {
+            "year": 2016,
+            "pollution": "18.86"
+        },
+        {
+            "year": 2017,
+            "pollution": "18.87"
+        },
+        {
+            "year": 2018,
+            "pollution": "18.87"
+        },
+        {
+            "year": 2019,
+            "pollution": "18.87"
+        },
+        {
+            "year": 2020,
+            "pollution": "18.88"
+        },
+        {
+            "year": 2021,
+            "pollution": "18.88"
+        },
+        {
+            "year": 2022,
+            "pollution": "18.88"
+        },
+        {
+            "year": 2023,
+            "pollution": "18.89"
+        },
+        {
+            "year": 2024,
+            "pollution": "18.89"
+        },
+        {
+            "year": 2025,
+            "pollution": "18.89"
+        },
+        {
+            "year": 2026,
+            "pollution": "18.90"
+        },
+        {
+            "year": 2027,
+            "pollution": "18.90"
+        },
+        {
+            "year": 2028,
+            "pollution": "18.90"
+        },
+        {
+            "year": 2029,
+            "pollution": "18.91"
+        },
+        {
+            "year": 2030,
+            "pollution": "18.91"
+        },
+        {
+            "year": 2031,
+            "pollution": "18.91"
+        },
+        {
+            "year": 2032,
+            "pollution": "18.92"
+        }
+    ]
+},
+{
+    "start_year": 2000,
+    "end_year": 2032,
+    "state": "Missouri",
+    "factor": "O3 AQI",
+    "predictions": [
+        {
+            "year": 2000,
+            "pollution": "1.81"
+        },
+        {
+            "year": 2001,
+            "pollution": "2.81"
+        },
+        {
+            "year": 2002,
+            "pollution": "2.81"
+        },
+        {
+            "year": 2003,
+            "pollution": "1.82"
+        },
+        {
+            "year": 2004,
+            "pollution": "3.82"
+        },
+        {
+            "year": 2005,
+            "pollution": "4.82"
+        },
+        {
+            "year": 2006,
+            "pollution": "5.83"
+        },
+        {
+            "year": 2007,
+            "pollution": "7.83"
+        },
+        {
+            "year": 2008,
+            "pollution": "12.83"
+        },
+        {
+            "year": 2009,
+            "pollution": "12.84"
+        },
+        {
+            "year": 2010,
+            "pollution": "1.84"
+        },
+        {
+            "year": 2011,
+            "pollution": "0.84"
+        },
+        {
+            "year": 2012,
+            "pollution": "2.85"
+        },
+        {
+            "year": 2013,
+            "pollution": "18.85"
+        },
+        {
+            "year": 2014,
+            "pollution": "18.85"
+        },
+        {
+            "year": 2015,
+            "pollution": "18.86"
+        },
+        {
+            "year": 2016,
+            "pollution": "18.86"
+        },
+        {
+            "year": 2017,
+            "pollution": "18.87"
+        },
+        {
+            "year": 2018,
+            "pollution": "18.87"
+        },
+        {
+            "year": 2019,
+            "pollution": "18.87"
+        },
+        {
+            "year": 2020,
+            "pollution": "18.88"
+        },
+        {
+            "year": 2021,
+            "pollution": "18.88"
+        },
+        {
+            "year": 2022,
+            "pollution": "18.88"
+        },
+        {
+            "year": 2023,
+            "pollution": "18.89"
+        },
+        {
+            "year": 2024,
+            "pollution": "18.89"
+        },
+        {
+            "year": 2025,
+            "pollution": "18.89"
+        },
+        {
+            "year": 2026,
+            "pollution": "18.90"
+        },
+        {
+            "year": 2027,
+            "pollution": "18.90"
+        },
+        {
+            "year": 2028,
+            "pollution": "18.90"
+        },
+        {
+            "year": 2029,
+            "pollution": "18.91"
+        },
+        {
+            "year": 2030,
+            "pollution": "18.91"
+        },
+        {
+            "year": 2031,
+            "pollution": "18.91"
+        },
+        {
+            "year": 2032,
+            "pollution": "18.92"
+        }
+    ]
+}
+]
