@@ -1,7 +1,8 @@
 ![](/img/01_logo.png)
 # Documentation
 
-## Demo Links: [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
+## Demo Links: [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1), [MAPredict Web App](https://mapredict2.now.sh/Q6/choropleth.html)
+
 ### Problem Category: Environment & Health
 
 ### Pitch:
@@ -17,7 +18,6 @@ The objective for this project is to create visualizations showing the status of
 ### Full stack application/tools/tech~
 
 -  **Frontend** is made up of : JavaScript, D3
-![](/img/2.gif)
 
 - **Backend** is made of: Django, PostgreSQL (API Created)
 ![](/img/4.png)
