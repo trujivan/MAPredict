@@ -9,7 +9,7 @@ The objective for this project is to create visualizations showing the status of
 
 ### Documentation:
 ### Processes:
-![](/img/Webp.net-gifmaker.gif)
+![](/img/3.gif)
 
 ### Work-Flow & Goals
 ![](/img/MAPREDICT.png)
