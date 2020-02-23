@@ -1,6 +1,5 @@
 # MAPredict
 ## Demo Links: [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
-[Data Set](https://www.kaggle.com/sogun3/uspollution)
 ### Problem Category: Environment & Health
 
 ### Pitch:
@@ -22,7 +21,8 @@ MAPredict is a web app that is backed by the power of AI, machine learning model
 - **Backend** is made of: Django, PostgreSQL (API Created)
 ![](/img/4.png)
 
-- **Data** is sourced from:
+- **Data** is sourced from: [Kaggle](https://www.kaggle.com/sogun3/uspollution)
+
 
 
 ### Addition Resources:
