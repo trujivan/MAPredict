@@ -1,7 +1,7 @@
 ![](/img/01_logo.png)
 # Documentation
 
-## Demo Links: [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1), [MAPredict App](https://mapredict2.now.sh/Q6/choropleth.html)
+## Demo Links: [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1), [MAPredict](https://mapredict2.now.sh/Q6/choropleth.html)
 
 ### Problem Category: Environment & Health
 
