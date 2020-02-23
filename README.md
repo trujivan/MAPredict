@@ -3,7 +3,7 @@
 
 ## Demo Links: [MAPredict](https://mapredict2.now.sh/Q6/choropleth.html), [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
 
-### Problem Category: Environment & Health
+### Problem Category: Environment
 
 ### Pitch:
 
