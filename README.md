@@ -21,6 +21,7 @@ The objective for this project is to create visualizations showing the status of
 
 - **Backend** is made of: Django, PostgreSQL (API Created)
 ![](/img/4.png)
+
 - **Mobile Prototype**:
 ![](/img/5.gif)
 
