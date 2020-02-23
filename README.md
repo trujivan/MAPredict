@@ -16,10 +16,11 @@ The objective for this project is to create visualizations showing the status of
 MAPredict is a web app that is backed by the power of AI, machine learning models.
 
 
-Full stack application/tools/tech~
-Our *front end* is made up of : JavaScript, D3
-Our *backend* is made of: Django, PostgreSQL
-Our data is sourced from:
+### Full stack application/tools/tech~
+
+-  *Frontend* is made up of : JavaScript, D3
+- *Backend* is made of: Django, PostgreSQL
+- *Data* is sourced from:
 
 ### Addition Resources:
 [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
