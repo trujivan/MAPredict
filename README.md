@@ -21,6 +21,9 @@ The objective for this project is to create visualizations showing the status of
 
 - **Backend** is made of: Django, PostgreSQL (API Created)
 ![](/img/4.png)
+- **Mobile Prototype** :
+![](/img/Video.mov)
+
 
 - **Data** is sourced from: [Kaggle](https://www.kaggle.com/sogun3/uspollution)
 
