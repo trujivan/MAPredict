@@ -15,4 +15,4 @@ Pitch:
 
 
 ## Documentation:
-/img/MAPREDICT.png)
+(/img/MAPREDICT.png)
