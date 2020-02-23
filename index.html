@@ -42,6 +42,8 @@
 </style>
 <div>
     <h1 style="align:center">Climate Data Bitches</h1>
+    <input type="checkbox" id="myCheckbox"> Health
+    <input type="checkbox" id="myCheckbox1"> Climate
  <div width = "300px"id="slider-time"></div>
 </div>
 <svg width="1100" height="800"></svg>
@@ -61,6 +63,35 @@
   var dataTime = d3.range(0, 26).map(function(d) {
     return new Date(2001 + d, 0, 0);
   });
+
+  d3.select("#myCheckbox").on("change",update);
+            update();
+            
+function update1(){
+    d3.selectAll("input").each(function(d){ 
+  if(d3.select(this).attr("type") == "checkbox") 
+    d3.select(this).node().checked = false;
+});
+}
+
+function update(){
+
+    if(d3.select("#myCheckbox").property("checked")){
+        color = d3.scaleThreshold()
+      .domain(d3.range(0, 20))
+      .range(d3.schemeReds[9]);
+    }
+    else
+    {
+        color = d3.scaleThreshold()
+      .domain(d3.range(0, 20))
+      .range(d3.schemeBlues[9]);
+    }
+    
+    console.log("Ciao")
+} 
+
+
     var sliderTime = d3
     .sliderBottom()
     .min(d3.min(dataTime))
@@ -95,9 +126,10 @@
   let proj = d3.geoAlbersUsa()
   let year_tip = d3.map()
   var path = d3.geoPath().projection(proj);
+
   var color = d3.scaleThreshold()
       .domain(d3.range(0, 20))
-      .range(d3.schemeReds[9]);
+      .range(d3.schemeBlues[9]);
   
 
       function strong(text) {
