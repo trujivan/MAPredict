@@ -15,5 +15,4 @@ Pitch:
 
 
 ## Documentation:
-(/img/MAPREDICT.png)
-Format: ![Alt Text](/img/MAPREDICT.png)
+/img/MAPREDICT.png)
