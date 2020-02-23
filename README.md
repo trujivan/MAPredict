@@ -1,5 +1,3 @@
-![](/img/umsl.png)
-
 # MAPredict
 
 ## Problem Category: Environment **Climate Change**
