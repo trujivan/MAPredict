@@ -1,0 +1,4 @@
+research/.ipynb_checkpoints/*
+research/pollution_us_2000_2016.csv
+research/processed_data.joblib
+.idea/*
