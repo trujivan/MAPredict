@@ -18,6 +18,8 @@ MAPredict is a web app that is backed by the power of AI, machine learning model
 ### Full stack application/tools/tech~
 
 -  **Frontend** is made up of : JavaScript, D3
+![](/img/2.gif)
+
 - **Backend** is made of: Django, PostgreSQL (API Created)
 ![](/img/4.png)
 
