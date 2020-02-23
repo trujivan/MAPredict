@@ -1,6 +1,6 @@
 # MAPredict
 ## Demo Links: [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
-
+[Data Set](https://www.kaggle.com/sogun3/uspollution)
 ### Problem Category: Environment & Health
 
 ### Pitch:
@@ -16,11 +16,13 @@ The objective for this project is to create visualizations showing the status of
 
 MAPredict is a web app that is backed by the power of AI, machine learning models.
 
-
 ### Full stack application/tools/tech~
 
 -  **Frontend** is made up of : JavaScript, D3
-- **Backend** is made of: Django, PostgreSQL
+- **Backend** is made of: Django, PostgreSQL (API Created)
+![](/img/4.png)
+
 - **Data** is sourced from:
+
 
 ### Addition Resources:
