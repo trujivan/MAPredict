@@ -24,8 +24,5 @@ The objective for this project is to create visualizations showing the status of
 
 - **Data** is sourced from: [Kaggle](https://www.kaggle.com/sogun3/uspollution)
 
-#### Mobile Prototype
+### Mobile Prototype
 ![](/img/5.gif)
-
-
-### Addition Resources:
