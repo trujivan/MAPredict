@@ -14,8 +14,6 @@ The objective for this project is to create visualizations showing the status of
 ### Work-Flow & Goals
 ![](/img/MAPREDICT.png)
 
-MAPredict is a web app that is backed by the power of AI, machine learning models.
-
 ### Full stack application/tools/tech~
 
 -  **Frontend** is made up of : JavaScript, D3
