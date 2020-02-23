@@ -15,5 +15,5 @@ Pitch:
 
 
 ## Documentation:
-![GitHub Logo](/images/MAPREDICT.png)
+![GitHub Logo](/img/MAPREDICT.png)
 Format: ![Alt Text](url)
