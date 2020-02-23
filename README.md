@@ -10,19 +10,16 @@ The objective for this project is to create visualizations showing the status of
 ### Processes:
 ![](/img/Webp.net-gifmaker.gif)
 
-#### Work-Flow & Goals
+### Work-Flow & Goals
 ![](/img/MAPREDICT.png)
 
 MAPredict is a web app that is backed by the power of AI, machine learning models.
 
 
 Full stack application/tools/tech~
-Our *front end* is made up of :
-Our *backend* is made of:
+Our *front end* is made up of : JavaScript, D3
+Our *backend* is made of: Django, PostgreSQL
 Our data is sourced from:
 
-Data Resources:
-
-
-Addition Resources:
+### Addition Resources:
 [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
