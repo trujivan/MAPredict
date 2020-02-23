@@ -1,3 +1,5 @@
+![](/img/umsl.png)
+
 # MAPredict
 
 ## Problem Category: Environment **Climate Change**
@@ -15,5 +17,11 @@ Our data is sourced from:
 
 
 ## Documentation:
+### The thought process:
+![](/img/1.png)
+![](/img/2.png)
+![](/img/3.png)
 
+
+#### Work-Flow & Goals
 ![](/img/MAPREDICT.png)
