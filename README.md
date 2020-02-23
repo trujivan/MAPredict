@@ -17,7 +17,7 @@ The objective for this project is to create visualizations showing the status of
 
 ### Full stack application/tools/tech~
 
--  **Frontend** is made up of : JavaScript, D3
+-  **Frontend** is made up of : JavaScript, D3, Python
 
 - **Backend** is made of: Django, PostgreSQL (API Created)
 ![](/img/4.png)
