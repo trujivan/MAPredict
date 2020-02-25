@@ -1,7 +1,7 @@
 ![](/img/01_logo.png)
 # Documentation
 
-## Demo Links: [MAPredict](https://mapredict2.now.sh/Q6/choropleth.html), [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1)
+## Demo Links: [MAPredict](https://mapredict2.now.sh/Q6/choropleth.html), [Figma](https://www.figma.com/file/lF929q9YDw9SJkBTvwIoVY/mapredict?node-id=0%3A1), [Mobile Prototype](https://im3.ezgif.com/tmp/ezgif-3-60661bb47131.gif)
 
 ### Problem Category: Environment
 
@@ -17,12 +17,9 @@ The objective for this project is to create visualizations showing the status of
 
 ### Full stack application/tools/tech~
 
--  **Frontend** is made up of : JavaScript, D3
+-  **Frontend** is made up of : JavaScript, D3, Python
 
 - **Backend** is made of: Django, PostgreSQL (API Created)
 ![](/img/4.png)
 
 - **Data** is sourced from: [Kaggle](https://www.kaggle.com/sogun3/uspollution)
-
-### Mobile Prototype
-![](/img/5.gif)
